@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Browsers</title>
+	<style>
+
+	.chrome, .fox, .opera, .safari, .ya, .ie{
+		position: relative;
+		display: inline;
+		float: left;
+		width: 130px;
+		height: 132px;
+	}
+	
+	.chrometext, .foxtext, .operatext, .safaritext, .yatext, .ietext{
+		position: relative;
+		font: 16px Arial;
+		width: 50px;
+		height: 0px;
+		display: block;
+		float: left;
+		margin: 55px 0px 0px -91px;
+	}
+
+	/*============== Chrome ================*/
+	.chrome{
+		background: url(img/chrome.png);	
+		z-index: 2;
+	}
+	
+	.chrometext{
+		color: #c90000;
+		z-index: 1;
+	}
+
+	.chrometext:before {
+		color: #22a12a;
+		content: "Ch"
+	}
+
+	.chrometext:after {
+		color: #f9d411;
+		content: "me"
+	}
+	/*============== Chrome end ================*/
+	
+	/*============= Firefox ==================*/ 
+	.fox{
+		background: url(img/fox.png);
+		z-index: 4;
+	}
+
+	.foxtext{
+		color: #e79e1e;
+		z-index: 3;
+	}
+	/*============= Firefox end ==================*/ 
+
+	/*============= Opera ==================*/ 
+	.opera {			
+		background: url(img/opera.png);
+		z-index: 6;
+	}
+
+	.operatext {
+		color: #c10e0e;
+		z-index: 5;
+	}
+
+	/*============= Opera end ==================*/
+
+	/*============= Safari ==================*/ 
+	.safari{			
+		background: url(img/safari.png);
+		z-index: 8;
+	}
+
+	.safaritext{
+		color: #717171;
+		z-index: 7;
+	}
+	/*============= Safari end ==================*/ 
+
+	/*============= Yandex ==================*/ 
+	.ya{			
+		background: url(img/yandex.png);
+		z-index: 10;
+	}
+
+	.yatext:first-letter{
+		color: #ff0000;
+		z-index: 9;
+	}
+	/*============= Yandex end ==================*/ 
+
+	/*============= Internet Explorer ==================*/ 
+	.ie, .ietext{			
+		background: url(img/ie.png) #fff;
+		float: right;
+		color: #036da3;
+		z-index: 12;
+	}
+	
+	.ietext{
+		margin: 45px -91px 0px 0px;
+		z-index: 11;
+	}
+	/*============= Internet Explorer end ==================*/ 
+	</style>
+</head>
+<body>
+	<div class="chrome"></div>
+	<div class="chrometext">ro</div>
+	<div class="fox"></div>
+	<div class="foxtext">Firefox</div>
+	<div class="opera"></div>
+	<div class="operatext">Opera</div>
+	<div class="safari"></div>
+	<div class="safaritext">Safari</div>
+	<div class="ya"></div>
+	<div class="yatext">Yandex</div>
+	<div class="ie"></div>	
+	<div class="ietext">Internet Explorer</div>	
+</html>
